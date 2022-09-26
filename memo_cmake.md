@@ -16,6 +16,7 @@ $ pacman -Syu
 
 
 # 3. Cmake 프로젝트 설정
+- 참고: https://junstar92.tistory.com/204
 - cpp 파일 작성
 - CmakeLists.txt 아래와 같이 작성 
 
