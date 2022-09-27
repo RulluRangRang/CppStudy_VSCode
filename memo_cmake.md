@@ -1,11 +1,4 @@
-# 1. Cmake 설치 
-- URL: https://cmake.org/download/
-- Add Cmake to the system PATH for the current user에 체크 후 설치
-- Cmake 버전 체크
-
-        $ cmake --version
-
-# 2. GCC 설치(MSYS2)
+# 1. GCC 설치(MSYS2)
 - URL: https://www.msys2.org/
 - 참고: https://www.devdungeon.com/content/install-gcc-compiler-windows-msys2-cc
 
@@ -13,6 +6,28 @@
 ```
 $ pacman -Syu
 ```
+
+- MSYS2 GCC 설치
+```
+$ pacman -S mingw-w64-x86_64-gcc
+```
+
+- GDB 설치 
+```
+$ pacman -S mingw-w64-x86_64-toolchain
+```
+
+# 2. Cmake 설치 
+- URL: https://cmake.org/download/
+- 참고: https://altheacom.tistory.com/entry/VSCODE-그리고-CC-그리고-CMAKE 
+- Add Cmake to the system PATH for the current user에 체크 후 설치
+- Cmake 버전 체크
+
+        $ cmake --version
+
+- (Optional) MSYS2에서 Cmake 설치
+
+        $ pacman -S mingw-w64-x86_64-cmake mingw-w64-x86_64-extra-cmake-modules
 
 
 # 3. Cmake 프로젝트 설정
